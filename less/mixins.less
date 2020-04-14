@@ -1,1 +1,25 @@
 // Mixins in here
+.flexit(@dir:row, @wrap:nowrap, @just:flex-start, @ali:flex-start, @alico:flex-start){
+    display: flex;
+    flex-direction: @dir;
+    flex-wrap: @wrap;
+    justify-content: @just;
+    align-items: @ali;
+    align-content: @alico;
+}
+
+.stybtn(@bordcol:lightgray; @bordrad:12px; @bgrcol:#008080; @color:white; @txdec:none; @pad:8%; @f-size:2.5rem; @txtali: center){
+    border: 0.2rem solid @bordcol;
+    border-radius: @bordrad;
+    background-color: @bgrcol;
+    color: @color;
+    text-decoration: @txdec;
+    padding: @pad;
+    font-size: @f-size;
+    text-align: @txtali;
+    &:hover {
+        background-color: @color;
+        color: @bgrcol;
+        border: 0.2rem solid black;
+      }
+}

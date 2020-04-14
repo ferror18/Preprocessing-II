@@ -1,1 +1,29 @@
 // Navigation Styles here
+nav{
+    .flexit(@just: flex-end);
+    border-bottom: 0.2rem dashed #C0C0C0;
+    h1{
+        width: 20%;
+        margin-right: 40%;
+        padding: 2% 0;
+    }
+    .links{
+        padding: 4% 1%;
+        font-size: 2rem;
+        text-decoration: none;
+        color: black;
+    }
+    @media @mobile{
+        flex-wrap: wrap;
+        h1{
+        width:100%;
+        margin: 0 auto;
+        text-align: center;
+        }
+        .links{
+            font-size: 2rem;
+            width: 20%;
+            margin: 0 auto;
+        }
+    }
+}
