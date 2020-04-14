@@ -8,18 +8,18 @@
     align-content: @alico;
 }
 
-.stybtn(){
-    border: 0.2rem solid lightgray;
-    border-radius: 12px;
-    background-color: #008080;
-    color: white;
-    text-decoration: none;
-    padding: 8%;
-    font-size: 2.5rem;
-    text-align: center;
+.stybtn(@bordcol:lightgray; @bordrad:12px; @bgrcol:#008080; @color:white; @txdec:none; @pad:8%; @f-size:2.5rem; @txtali: center){
+    border: 0.2rem solid @bordcol;
+    border-radius: @bordrad;
+    background-color: @bgrcol;
+    color: @color;
+    text-decoration: @txdec;
+    padding: @pad;
+    font-size: @f-size;
+    text-align: @txtali;
     &:hover {
-        background-color: white;
-        color: #008080;
+        background-color: @color;
+        color: @bgrcol;
         border: 0.2rem solid black;
       }
 }
